@@ -1,0 +1,51 @@
+CustomSettings.ini:
+[Settings]
+Priority=Default, DeploymentType, ByDesktopType, ByLaptopType
+Properties=MyCustomProperty
+
+[Default]
+_SMSTSORGNAME=Lab Deployment
+OSInstall=YES
+SkipAdminPassword=YES
+SkipApplications=NO
+SkipAppsOnUpgrade=YES
+SkipBDDWelcome=YES
+SkipBitLocker=YES
+SkipCapture=YES
+SkipComputerName=NO
+SkipComputerBackup=YES
+SkipDeploymentType=YES
+SkipDomainMembership=NO
+SkipFinalSummary=NO
+SkipLocaleSelection=YES
+SkipPackageDisplay=YES
+SkipProductKey=YES
+;SkipSummary=YES
+SkipTaskSequence=NO
+SkipTimeZone=YES
+SkipUserData=YES
+DeploymentType=NEWCOMPUTER
+; DOMAIN JOIN DATA
+JoinDomain=lab.local
+DomainAdmin=joinDomain
+DomainAdminDomain=lab.local
+DomainAdminPassword=Password123
+MachineObjectOU=OU=WDS,DC=lab,DC=local
+; END DOMAIN
+FinishAction=REBOOT
+KeyboardLocale=en-US
+TimeZoneName=Pacific Standard Time
+UILanguage=en-US
+UserLocale=en-US
+
+Boostrap.ini:
+[Settings]
+Priority=Default
+
+[Default]
+DeployRoot=\\Lab-Deploy1\DeploymentShare$
+UserID=joinDomain
+userDomain=lab.local
+UserPassword=Password123
+KeyboardLocale=en-US
+SkipBDDWelcome=YES
