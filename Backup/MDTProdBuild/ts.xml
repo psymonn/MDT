@@ -526,7 +526,7 @@
         <variable name="OSDAdapter0GatewayCostMetric" property="Adapters0GatewayCostMetric"></variable>
         <variable name="OSDAdapter0Gateways" property="Adapters0Gateways"></variable>
         <variable name="OSDAdapter0IPAddressList" property="Adapters0IPAddressList"></variable>
-        <variable name="OSDAdapter0Name" property="Adapters0Name">BMS-NodeMgmt-v100</variable>
+        <variable name="OSDAdapter0Name" property="Adapters0Name">LAN_V100</variable>
         <variable name="OSDAdapter0MacAddress" property="Adapters0MacAddress"></variable>
         <variable name="OSDAdapter0SubnetMask" property="Adapters0SubnetMask"></variable>
         <variable name="OSDAdapter0DNSSuffix" property="Adapters0DNSSuffix"></variable>
@@ -752,7 +752,7 @@
           <variable name="SMSTSRunCommandLineUserPassword" property="SMSTSRunCommandLineUserPassword"></variable>
           <variable name="LoadProfile" property="LoadProfile">false</variable>
         </defaultVarList>
-        <action>cmd.exe /c net config Server /SRVCOMMENT:"LAND200 BMS Enclave"</action>
+        <action>cmd.exe /c net config Server /SRVCOMMENT:"MY Computer"</action>
         <condition>
           <expression type="SMS_TaskSequence_VariableConditionExpression">
             <variable name="Variable">OSDComputerDescription</variable>
