@@ -1,0 +1,7 @@
+Name	ShortName	Version	Publisher	Language	CommandLine	WorkingDirectory	UninstallKey	Reboot	hide	enable	guid
+ASDM	ASDM				msiexec /i dm-launcher.msi /qn /norestart	.\Applications\ASDM			False	True	{efd12944-fbfb-4706-bccb-57bae506c2b9}
+Chrome.exe	Chrome.exe				81.0.0.4044.138.Chrome.exe /silent /install	.\Applications\Chrome			False	True	{cf7acba1-d839-49e0-bcc4-9c9c6cc4f16f}
+JRE_1.8	JRE_1.8				jre-8u251-windows-i586.exe INSTALL_SILENT=1 STATIC=0 AUTO_UPDATE=0 REBOOT=0 NOSTARTMENU=1 SPONSORS=0	.\Applications\JRE_1.8		False	False	True	{8d3e7387-d1cc-418a-be6e-e76ecc1ba53f}
+KeePass	KeePass				KeePass-2.45-Setup.exe /verysilent	.\Applications\KeePass				True	{d56e4902-08d4-4eca-ae9a-6f4c7ddb36b9}
+Putty	Putty				msiexec /i putty-64bit-0.73-installer.msi /q	.\Applications\Putty			False	True	{f119c4b8-4ec7-406a-930a-5896a7a6f70a}
+WinSCP	WinSCP				WinSCP-5.15.9-Setup.exe /SILENT /SP	.\Applications\WinSCP			False	True	{044debd6-7b7c-4ca5-af79-0c73ddc70e88}
